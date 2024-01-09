@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --white: #ffffff;
+    --boldblack: #000000;
+    --black: #000000;
+    --primary-color: #d32cb2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar {
+    box-shadow: 0 5px 4px rgba(146, 161, 176, 0.15);
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    z-index: 100;
+    padding-bottom: 2%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.menu-items {
+    padding-top: 2%;
+    order: 2;
+    display: flex;
+    margin-right: 3rem;
+    color: #d32cb2;
+    text-overflow: #d32cb2;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    color: #d32cb2;
+}
+
+.navbar-container ul a {
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.navbar-container ul a:after {
+    position: absolute;
+    background: #d32cb2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar-container ul a:hover:after {
+    width: 100%;
+}
+
+.logo {
+    font-family: "Lemon";
+    font-size: 2rem;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: #d32cb2;
+    text-shadow: 1px 1px 2px #000000;
+    transform: rotate(0deg);
+}
+
+h1 {
+    padding-top: 5%;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+    padding-bottom: 2%;
+    text-align: center;
+
+}
+
+.banner {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/225/456/large_2x/various-ice-cream-flavors-in-cones-on-a-dark-stone-background-summer-and-sweet-menu-concept-free-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    padding-top: 5%;
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 20px;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 25px;
+}
+
+h5 {
+    padding-inline-start: 3%;
+    font-size: 1.2em;
+    color: #666;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+
+}
+
+
+.flavor-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+
+.flavor-item {
+    width: 300px;
+    height: 300px;
+
+    margin: 10px;
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: inline-table;
+    padding-bottom: 5%;
+}
+
+
+.flavor-image {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.flavor-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.flavor-name {
+    font-size: 20px;
+    font-weight: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.subscription-section,
+.signup-section {
+    text-align: center;
+    margin: 30px;
+    padding-bottom: 3%;
+    padding-top: 5%;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscription-form input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription-form button {
+    padding: 10px 20px;
+    background-color: #d32cb2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d32cb2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #d47cc2;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
